@@ -139,34 +139,66 @@ monitoring-stack/
 ```bash
 git clone https://github.com/Abhishek-7373/monitoring-stack.git
 cd monitoring-stack
-2️⃣ Configure Environment Variables
+```
+
+---
+
+### 2️⃣ Configure Environment Variables
+
+```bash
 cp .env.example .env
+```
 
-Edit .env:
+Edit `.env`:
 
+```env
 GRAFANA_ADMIN_USER=admin
 GRAFANA_ADMIN_PASSWORD=StrongPassword
 GOOGLE_CHAT_WEBHOOK=your_webhook_url
-3️⃣ Start the Monitoring Stack
+```
+
+---
+
+### 3️⃣ Start the Monitoring Stack
+
+```bash
 docker compose up -d
-4️⃣ Verify Running Containers
+```
+
+---
+
+### 4️⃣ Verify Running Containers
+
+```bash
 docker ps
-🌐 Access Services
-Service	URL
-Grafana	http://localhost:3000
+```
 
-Prometheus	http://localhost:9090
+---
 
-Alertmanager	http://localhost:9093
-📊 Grafana Dashboards
+## 🌐 Access Services
+
+| Service        | URL |
+|----------------|-----|
+| Grafana        | http://localhost:3000 |
+| Prometheus     | http://localhost:9090 |
+| Alertmanager   | http://localhost:9093 |
+
+---
+
+## 📊 Grafana Dashboards
 
 Pre-configured dashboards provide insights into:
 
-CPU usage
-Memory usage
-Container performance
-System health
-🚨 Alerting Workflow
+- CPU usage  
+- Memory usage  
+- Container performance  
+- System health  
+
+---
+
+## 🚨 Alerting Workflow
+
+```
 Prometheus detects issue
         ↓
 Alertmanager processes alert
@@ -174,45 +206,68 @@ Alertmanager processes alert
 Webhook receives alert
         ↓
 Google Chat notification sent
-🔐 Security Best Practices
-.env excluded using .gitignore
-No credentials stored in source code
-Webhook URLs kept private
-Ready for upgrade to:
-Docker Secrets
-AWS Secrets Manager
-Vault
-🧪 Testing the Setup
+```
+
+---
+
+## 🔐 Security Best Practices
+
+- `.env` excluded using `.gitignore`
+- No credentials stored in source code
+- Webhook URLs kept private
+
+Supports upgrade to:
+- Docker Secrets  
+- AWS Secrets Manager  
+- HashiCorp Vault  
+
+---
+
+## 🧪 Testing the Setup
 
 Simulate CPU load:
 
+```bash
 docker run --rm -it progrium/stress --cpu 2 --timeout 60s
+```
 
 Observe:
 
-Grafana dashboards update
-Alerts trigger (if configured)
-🎯 Use Case
+- Grafana dashboards update  
+- Alerts trigger (if configured)  
 
-This project simulates a real-world DevOps monitoring system used in production to:
+---
 
-Monitor infrastructure
-Track container health
-Detect anomalies
-Send real-time alerts
-🚀 Future Improvements
-Kubernetes deployment
-CI/CD integration
-Advanced alert routing
-Centralized logging (ELK stack)
-👨‍💻 Author
+## 🎯 Use Case
 
-Abhishek – DevOps Engineer
+This project simulates a **real-world DevOps monitoring system** used in production to:
 
-⭐ Support
+- Monitor infrastructure  
+- Track container health  
+- Detect anomalies  
+- Send real-time alerts  
+
+---
+
+## 🚀 Future Improvements
+
+- Kubernetes deployment  
+- CI/CD integration  
+- Advanced alert routing  
+- Centralized logging (ELK stack)  
+
+---
+
+## 👨‍💻 Author
+
+**Abhishek – DevOps Engineer**
+
+---
+
+## ⭐ Support
 
 If you found this useful:
 
-⭐ Star the repo
-🔁 Share it
-💬 Give feedback
+- ⭐ Star the repo  
+- 🔁 Share it  
+- 💬 Give feedback  
