@@ -32,6 +32,7 @@ The entire setup is containerized using Docker Compose, making it **portable, sc
 
 ## 🧭 Architecture Flow
 
+---
 
 Linux Host / Docker Containers
 ↓
