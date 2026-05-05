@@ -32,24 +32,21 @@ The entire setup is containerized using Docker Compose, making it **portable, sc
 
 ## 🧭 Architecture Flow
 
----
-
+```
 Linux Host / Docker Containers
-↓
+        ↓
 Node Exporter / cAdvisor / MySQL Exporter
-↓
+        ↓
 Prometheus (Metrics Collection & Storage)
-↓
+        ↓
 Grafana (Visualization & Dashboards)
-↓
+        ↓
 Alertmanager (Alert Routing)
-↓
+        ↓
 Webhook Service (Python)
-↓
+        ↓
 Google Chat Notifications
-
-
----
+```
 
 ## 🏗️ Architecture Explanation
 
