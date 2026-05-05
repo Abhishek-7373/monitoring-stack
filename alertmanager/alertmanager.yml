@@ -1,0 +1,50 @@
+global:
+  resolve_timeout: 5m
+
+route:
+  group_by: ['alertname', 'severity', 'job']
+  group_wait: 30s
+  group_interval: 5m
+  repeat_interval: 4h
+  receiver: 'google-chat'
+
+  routes:
+    - match:
+        severity: critical
+      receiver: 'google-chat'
+      group_wait: 10s
+      group_interval: 2m
+      repeat_interval: 1h
+
+    - match:
+        severity: warning
+      receiver: 'google-chat'
+      group_wait: 1m
+      group_interval: 10m
+      repeat_interval: 6h
+
+    - match_re:
+        alertname: "ContainerOOMKilled|ContainerRestartLoop"
+      receiver: 'google-chat'
+      group_wait: 0s
+      repeat_interval: 30m
+
+inhibit_rules:
+  - source_match:
+      alertname: 'HostDown'
+    target_match_re:
+      alertname: '.+'
+    equal: ['instance']
+
+  - source_match:
+      severity: 'critical'
+    target_match:
+      severity: 'warning'
+    equal: ['alertname', 'instance']
+
+receivers:
+  - name: 'google-chat'
+    webhook_configs:
+      - url: 'http://webhook-adapter:5000/'
+        send_resolved: true
+        max_alerts: 10

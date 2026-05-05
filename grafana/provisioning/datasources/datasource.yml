@@ -1,0 +1,15 @@
+# ============================================
+# Grafana Datasource Configuration
+# ============================================
+
+apiVersion: 1
+
+datasources:
+  - name: Prometheus
+    type: prometheus
+
+    # Use Docker service name (internal networking)
+    url: http://prometheus:9090
+
+    access: proxy
+    isDefault: true

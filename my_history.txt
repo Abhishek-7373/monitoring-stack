@@ -1,0 +1,1630 @@
+ 1311  cd ..
+ 1312  ls
+ 1313  cat docker-compose.yml 
+ 1314  vim docker-compose.yml 
+ 1315  ls ./prometheus/rules
+ 1316  docker compose down
+ 1317  docker compose up -d
+ 1318  sudo docker compose down
+ 1319  docker compose up -d
+ 1320  sudo docker-compose down
+ 1321  docker-compose up -d
+ 1322  vim docker-compose.yml 
+ 1323  cat docker-compose.yml 
+ 1324  vim docker-compose.yml 
+ 1325  ls
+ 1326  cd prometheus/
+ 1327  ls
+ 1328  cat prometheus.yml 
+ 1329  vim prometheus.yml 
+ 1330  docker compose restart prometheus
+ 1331  docker-compose restart prometheus
+ 1332  ls
+ 1333  cd rules/
+ 1334  ls
+ 1335  cat alerts.yml 
+ 1336  vim alerts.yml 
+ 1337  cat alerts.yml 
+ 1338  docker-compose restart prometheus 
+ 1339  ls
+ 1340  cat alerts.yml 
+ 1341  pwd
+ 1342  docker ps | grep alertmanager
+ 1343  docker ps
+ 1344  cd ..
+ 1345  ls
+ 1346  cd ..
+ 1347  ls
+ 1348  vim docker-compose.yml 
+ 1349  docker compose down
+ 1350  docker compose up -d
+ 1351  docker-compose down
+ 1352  docker-compose up -d
+ 1353  ls
+ 1354  cd prometheus/
+ 1355  ls
+ 1356  cd ..
+ 1357  ls
+ 1358  cd alertmanager/
+ 1359  ls
+ 1360  cat alertmanager.yml/
+ 1361  ls -l /home/abhishek/ab/monitoring-stack/alertmanager/
+ 1362  ls
+ 1363  ls -l /home/abhishek/ab/monitoring-stack/alertmanager/
+ 1364  ls -la
+ 1365  ls
+ 1366  cat alertmanager.yml/
+ 1367  cat alertmanager.yml
+ 1368  vim alertmanager/alertmanager.yml
+ 1369  cat alertmanager.yml/
+ 1370  vim alertmanager/alertmanager.yml/
+ 1371  ls
+ 1372  cat alertmanager.yml/
+ 1373  rm -rf alertmanager/alertmanager.yml/
+ 1374  ls
+ 1375  alertmanager.yml
+ 1376  cd ~/ab/monitoring-stack/alertmanager
+ 1377  rm -rf alertmanager.yml
+ 1378  ls -l
+ 1379  vim alertmanager.yml
+ 1380  cd ~/ab/monitoring-stack
+ 1381  docker-compose down
+ 1382  docker-compose up -d
+ 1383  docker ps | grep alertmanager
+ 1384  cat alertmanager.yml
+ 1385  vim alertmanager.yml
+ 1386  ls
+ 1387  cd alertmanager/
+ 1388  ls
+ 1389  cat alertmanager.yml 
+ 1390  rm -rf alertmanager.yml 
+ 1391  ls
+ 1392  cd ..
+ 1393  ls
+ 1394  mv alertmanager.yml alertmanager/
+ 1395  ls
+ 1396  cd alertmanager/
+ 1397  ls
+ 1398  cat alertmanager.yml 
+ 1399  docker compose restart alertmanager
+ 1400  docker-compose restart alertmanager
+ 1401  expr: vector(1)
+ 1402  docker-compose restart alertmanager
+ 1403  docker-compose up -d
+ 1404  docker rm -f grafana
+ 1405  ls
+ 1406  cd ..
+ 1407  ls -la
+ 1408  cat .env
+ 1409  vim .env 
+ 1410  cat .env 
+ 1411  docker-compose down
+ 1412  docker-compose up -d
+ 1413  docker ps
+ 1414  cat /etc/rel
+ 1415  ping 172.16.16.141
+ 1416  ping 172.16.16.179
+ 1417  cat /etc/release
+ 1418  exit
+ 1419  sudo nmap
+ 1420  nmap
+ 1421  exit
+ 1422  ip a
+ 1423  ufw
+ 1424  sudo ufw
+ 1425  sudo ufw allow 3306/tcp    
+ 1426  sudo ufw allow 4567/tcp    
+ 1427  sudo ufw allow 4567/udp
+ 1428  sudo ufw allow 4568/tcp    
+ 1429  sudo ufw allow 4444/tcp    
+ 1430  sudo ufw reload
+ 1431  sudo apt update && sudo apt upgrade -y
+ 1432  sudo apt install -y mariadb-server mariadb-client galera-4
+ 1433  sudo systemctl stop mariadb
+ 1434  cd ~//etc/mysql/mariadb.conf.d/
+ 1435  cd ~/etc/mysql/mariadb.conf.d/
+ 1436  cd ~
+ 1437  ls
+ 1438  cd /
+ 1439  ls
+ 1440  cd etc
+ 1441  ls
+ 1442  cd mysql/
+ 1443  ls
+ 1444  cd mariadb.conf.d/
+ 1445  ls
+ 1446  sudo vi 99-galera.cnf
+ 1447  sudo ufw allow 3306/tcp    
+ 1448  sudo ufw allow 4567/tcp    
+ 1449  sudo ufw allow 4567/udp
+ 1450  sudo ufw allow 4568/tcp    
+ 1451  sudo ufw allow 4444/tcp    
+ 1452  sudo ufw reload
+ 1453  sudo apt install nmap
+ 1454  nmap -sS 172.16.16.141
+ 1455  sudo nmap -sS 172.16.16.141
+ 1456  sudo nmap -sS 172.16.16.149
+ 1457  sudo nmap -sS 172.16.16.179
+ 1458  nmap -h
+ 1459  sudo nmap -sU 172.16.16.179
+ 1460  ls
+ 1461  sudo vi 60-galera.cnf 
+ 1462  sudo vi 99-galera.cnf 
+ 1463  ls
+ 1464  rm -rf 99-galera.cnf 
+ 1465  sudo rm -rf 99-galera.cnf 
+ 1466  ls
+ 1467  sudo mysql
+ 1468  sudo start mariadb
+ 1469  sudo systemctl start mariadb
+ 1470  sudo mysql
+ 1471  sudo apt install rsync
+ 1472  sudo vi 50-server.cnf 
+ 1473  systemctl restart mariadb
+ 1474  ls
+ 1475  cat 60-galera.cnf 
+ 1476  cat 50-server.cnf 
+ 1477  ip a
+ 1478  ls
+ 1479  cd ../../
+ 1480  ls
+ 1481  cd etc/mysql/mariadb.conf.d/
+ 1482  ls
+ 1483  sudo vim 60-galera.cnf 
+ 1484  sudo systemctl start mariadb
+ 1485  sudo systemctl enable mariadb
+ 1486  sudo systemctl stop mariadb
+ 1487  sudo systemctl start mariadb
+ 1488  sudo systemctl status mariadb
+ 1489  sudo systemctl stop mariadb
+ 1490  sudo systemctl status mariadb
+ 1491  sudo systemctl stop mariadb
+ 1492  sudo ls -lh /var/lib/mysql/ib_logfile*
+ 1493  sudo rm /var/lib/mysql/ib_logfile0
+ 1494  sudo rm /var/lib/mysql/ib_logfile1
+ 1495  cd ..
+ 1496  ls
+ 1497  cd mariadb.conf.d/
+ 1498  ls
+ 1499  sudo rm -f /var/lib/mysql/aria_log.*
+ 1500  sudo chown -R mysql:mysql /var/lib/mysql
+ 1501  sudo systemctl start mariadb
+ 1502  sudo systemctl status mariadb
+ 1503  sudo strings /var/lib/mysql/ibdata1 | grep -i "mysql\|mariadb" | head -20
+ 1504  sudo systemctl stop mariadb
+ 1505  sudo rm -rf /var/lib/mysql/*
+ 1506  sudo mariadb-install-db --user=mysql --datadir=/var/lib/mysql
+ 1507  sudo systemctl start mariadb
+ 1508  sudo systemctl status mariadb
+ 1509  sudo systemctl start mariadb
+ 1510  sudo strings /var/lib/mysql/ibdata1 | grep -i "created_by_version\|FIL_PAGE_TYPE\|10\.\|innodb" | head -30
+ 1511  sudo hexdump -C /var/lib/mysql/ibdata1 | head -50
+ 1512  sudo cat /var/lib/mysql/mysql_upgrade_info 2>/dev/null
+ 1513  sudo cat /var/lib/mysql/mariadb_upgrade_info 2>/dev/null
+ 1514  sudo journalctl -xeu mariadb.service --no-pager | tail -50
+ 1515  sudo innochecksum /var/lib/mysql/ibdata1 2>&1 | head -20
+ 1516  sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
+ 1517  sudo systemctl start mariadb
+ 1518  sudo systemctl status mariadb
+ 1519  clear
+ 1520  cd ~/home/abhishek
+ 1521  cd /
+ 1522  cd home/abhishek/
+ 1523  sudo systemctl stop mariadb 2>/dev/null
+ 1524  sudo systemctl stop garbd 2>/dev/null
+ 1525  sudo apt purge mariadb-server mariadb-client mariadb-common   mariadb-server-core-* mariadb-client-core-*   galera-* galera4   mysql-server mysql-client mysql-common   mysql-server-core-* mysql-client-core-* -y
+ 1526  sudo apt autoremove -y
+ 1527  sudo apt autoclean
+ 1528  sudo rm -rf /var/lib/mysql
+ 1529  sudo rm -rf /var/lib/mysql-files
+ 1530  sudo rm -rf /var/lib/mysql-keyring
+ 1531  sudo rm -rf /etc/mysql
+ 1532  sudo rm -rf /var/log/mysql
+ 1533  sudo rm -rf /var/log/mariadb*
+ 1534  sudo rm -f /etc/apt/sources.list.d/mariadb*
+ 1535  dpkg -l | grep -i "mysql\|mariadb\|galera"
+ 1536  sudo apt update
+ 1537  sudo apt install mariadb-server mariadb-client galera-4 mariadb-backup -y
+ 1538  sudo systemctl start mariadb
+ 1539  sudo systemctl status mariadb
+ 1540  sudo systemctl stop mariadb
+ 1541  sudo systemctl status mariadb
+ 1542  sudo apt purge mariadb-server mariadb-client mariadb-common   mariadb-server-core-* mariadb-client-core-* galera-* -y
+ 1543  sudo apt autoremove -y
+ 1544  sudo rm -rf /var/lib/mysql
+ 1545  sudo rm -rf /etc/mysql
+ 1546  sudo apt install apt-transport-https curl -y
+ 1547  curl -LsSo /tmp/mariadb_repo_setup https://downloads.mariadb.com/MariaDB/mariadb_repo_setup
+ 1548  sudo bash /tmp/mariadb_repo_setup --mariadb-server-version="mariadb-10.11"
+ 1549  sudo apt update
+ 1550  sudo apt install mariadb-server mariadb-client galera-4 mariadb-backup -y
+ 1551  mariadb --version
+ 1552  sudo systemctl start mariadb
+ 1553  sudo systemctl status mariadb
+ 1554  cd /
+ 1555  cd etc/mysql/mariadb.conf.d/
+ 1556  ls
+ 1557  sudo vim 50-server.cnf 
+ 1558  sudo vim 60-galera.cnf 
+ 1559  sudo systemctl stop mariadb
+ 1560  sudo systemctl start mariadb
+ 1561  sudo systemctl status mariadb
+ 1562  sudo systemctl start mariadb
+ 1563  sudo systemctl status mariadb
+ 1564  ip a
+ 1565  sudo journalctl -xeu mariadb.service --no-pager | tail -40
+ 1566  cat /etc/mysql/mariadb.conf.d/60-galera.cnf
+ 1567  cat /etc/systemd/system/mariadb.service.d/migrated-from-my.cnf-settings.conf
+ 1568  ls /usr/lib/galera/
+ 1569  ip a
+ 1570  sudo vi 60-galera.cnf 
+ 1571  sudo systemctl start mariadb
+ 1572  sudo systemctl status mariadb
+ 1573  sudo mysql -u root -pecosmob
+ 1574  sudo systemctl status mariadb.service 
+ 1575  sudo systemctl start mariadb.service 
+ 1576  sudo systemctl enable mariadb
+ 1577  sudo systemctl status mariadb
+ 1578  sudo systemctl start mariadb
+ 1579  sudo systemctl stop mariadb
+ 1580  sudo systemctl status mariadb
+ 1581  sudo systemctl start mariadb
+ 1582  sudo systemctl start mariadb -l
+ 1583  sudo systemctl status mariadb -l
+ 1584  sudo systemctl status mariadb
+ 1585  cat /etc/mysql/mariadb.cnf
+ 1586  cd /etc/mysql/conf.d/
+ 1587  ls
+ 1588  ls -a
+ 1589  cd ..
+ 1590  cd mariadb.conf.d/
+ 1591  ls
+ 1592  cat 60-galera.cnf 
+ 1593  cat /var/lib/mysql/grastate.dat 
+ 1594  sudo cat /var/lib/mysql/grastate.dat 
+ 1595  cd ..
+ 1596  ls
+ 1597  cd ab
+ 1598  pwd
+ 1599  cd /
+ 1600  cd etc/mysql/mariadb.conf.d/
+ 1601  ls
+ 1602  sudo systemctl start mariadb
+ 1603  sudo vim 60-galera.cnf 
+ 1604  sudo systemctl start mariadb
+ 1605  ls
+ 1606  sudo vim 60-galera.cnf 
+ 1607  ls
+ 1608  cd ..
+ 1609  ls
+ 1610  clear
+ 1611  ls
+ 1612  cd mariadb.conf.d/
+ 1613  cat 50-server.cnf 
+ 1614  cat 60-galera.cnf 
+ 1615  clear
+ 1616  ip a
+ 1617  clear
+ 1618  sudo cat /var/lib/mysql/grastate.dat
+ 1619  sudo systemctl start mariadb
+ 1620  sudo vim 60-galera.cnf 
+ 1621  sudo systemctl start mariadb
+ 1622  sudo systemctl status mariadb
+ 1623  sudo vim 60-galera.cnf 
+ 1624  exit
+ 1625  docker ps
+ 1626  docker-compose down && docker-compose up -d
+ 1627  cd ab
+ 1628  ls
+ 1629  cd monitoring-stack/
+ 1630  ls
+ 1631  docker-compose down && docker-compose up -d
+ 1632  docker ps
+ 1633  ls
+ 1634  cd alertmanager/
+ 1635  ls
+ 1636  cat alertmanager.yml 
+ 1637  vim alertmanager.yml 
+ 1638  docker-compose restart alertmanager
+ 1639  expr: vector(1)
+ 1640  cat alertmanager.yml 
+ 1641  ls
+ 1642  cd ..
+ 1643  ls
+ 1644  cat docker-compose.yml 
+ 1645  ls
+ 1646  cd prometheus/
+ 1647  ls
+ 1648  cd rules/
+ 1649  ls
+ 1650  cat alerts.yml 
+ 1651  ls
+ 1652  cd ..
+ 1653  ls
+ 1654  cat prometheus.yml 
+ 1655  ls
+ 1656  cd ..
+ 1657  ls
+ 1658  cd grafana/
+ 1659  ls
+ 1660  cd provisioning/
+ 1661  ls
+ 1662  cd da
+ 1663  cd dashboards
+ 1664  ls
+ 1665  cd ..
+ 1666  ls
+ 1667  cd datasources/
+ 1668  ls
+ 1669  cat datasource.yml 
+ 1670  ls
+ 1671  cd ..
+ 1672  ls
+ 1673  cd ..
+ 1674  ls
+ 1675  cd ..
+ 1676  ls
+ 1677  cd prometheus/
+ 1678  ls
+ 1679  cat prometheus.yml 
+ 1680  cd ..
+ 1681  ls
+ 1682  cd alertmanager/
+ 1683  ls
+ 1684  vim alertmanager.yml 
+ 1685  cd ..
+ 1686  ls
+ 1687  mkdir -p webhook
+ 1688  ls
+ 1689  mkdir -p webhook
+ 1690  vim webhook/app.py
+ 1691  ls
+ 1692  cd webhook/
+ 1693  ls
+ 1694  cat app.py 
+ 1695  cd ..
+ 1696  ls
+ 1697  vim docker-compose.yml 
+ 1698  ls webhook/app.py
+ 1699  docker-compose down
+ 1700  docker-compose up -d
+ 1701  ls
+ 1702  cd webhook/
+ 1703  ls
+ 1704  cat app.py 
+ 1705  vim app.py 
+ 1706  docker-compose restart webhook-adapter
+ 1707  docker ps
+ 1708  docker-compose restart prometheus
+ 1709  docker ps -a
+ 1710  docker ps
+ 1711  docker logs webhook-adapter
+ 1712  vim app.py 
+ 1713  docker-compose restart webhook-adapter
+ 1714  docker logs -f webhook-adapter
+ 1715  ls
+ 1716  vin app.py 
+ 1717  vim app.py 
+ 1718  docker-compose restart webhook-adapter
+ 1719  ls
+ 1720  cd ..
+ 1721  ls
+ 1722  cd alertmanager/
+ 1723  ls
+ 1724  cd ..
+ 1725  cd prometheus/
+ 1726  ls
+ 1727  cd rules/
+ 1728  ls
+ 1729  cat alerts.yml 
+ 1730  vim alerts.yml 
+ 1731  docker-compose restart prometheus
+ 1732  docker-compose down
+ 1733  docker-compose up -d
+ 1734  docker ps
+ 1735  ls
+ 1736  cd ..
+ 1737  ls
+ 1738  cd ..
+ 1739  ls
+ 1740  cd alertmanager/
+ 1741  ls
+ 1742  vim alertmanager.yml 
+ 1743  ld
+ 1744  ls
+ 1745  cd ..
+ 1746  ls
+ 1747  cd prometheus/
+ 1748  ls
+ 1749  cd rules/
+ 1750  ls
+ 1751  vim alerts.yml 
+ 1752  cat alerts.yml 
+ 1753  docker-compose restart alertmanager prometheus
+ 1754  ls
+ 1755  cd ..
+ 1756  ls
+ 1757  cd ..
+ 1758  ls
+ 1759  vim docker-compose.yml 
+ 1760  docker-compose down
+ 1761  docker-compose up -d
+ 1762  ls
+ 1763  cd webhook/
+ 1764  ls
+ 1765  vim app.py 
+ 1766  cat app.py 
+ 1767  vim app.py 
+ 1768  ls
+ 1769  cd .
+ 1770  cd ..
+ 1771  ls
+ 1772  ls -la
+ 1773  vim .env 
+ 1774  cat .env 
+ 1775  vim .env 
+ 1776  docker-compose down
+ 1777  docker-compose up -d
+ 1778  docker exec -it webhook-adapter env | grep GOOGLE
+ 1779  docker ps
+ 1780  docker exec -it webhook-adapter env | grep GOOGLE
+ 1781  ls
+ 1782  ls -a
+ 1783  cat .env
+ 1784  docker logs webhook-adapter
+ 1785  ls
+ 1786  vim docker-compose.yml 
+ 1787  docker-compose down
+ 1788  docker-compose up -d --build
+ 1789  docker-compose down
+ 1790  docker-compose up -d --build
+ 1791  ls
+ 1792  cd prometheus/
+ 1793  ls
+ 1794  cat  prometheus.yml 
+ 1795  vim prometheus.yml 
+ 1796  docker-compose restart prometheus
+ 1797  docker ps
+ 1798  ls
+ 1799  docker-compose restart prometheus
+ 1800  docker ps
+ 1801  docker ps -a
+ 1802  docker-compose up -d
+ 1803  ls
+ 1804  cd webhook
+ 1805  touch Dockerfile
+ 1806  ls
+ 1807  vim Dockerfile 
+ 1808  echo -e "flask\nrequests\npython-dotenv" > webhook/requirements.txt
+ 1809  ls
+ 1810  echo -e "flask\nrequests\npython-dotenv" > requirements.txt
+ 1811  ls
+ 1812  cd ..
+ 1813  docker-compose up -d --build
+ 1814  docker ps
+ 1815  docker-compose logs webhook-adapter
+ 1816  curl -X POST http://localhost:9093/api/v1/alerts -H "Content-Type: application/json" -d '[
+ 1817    {
+ 1818      "labels": {
+ 1819        "alertname": "ContainerDown",
+ 1820        "severity": "critical",
+ 1821        "name": "test-container"
+ 1822      },
+ 1823      "annotations": {
+ 1824        "summary": "Container Down",
+ 1825        "description": "test-container is not reporting metrics"
+ 1826      },
+ 1827      "status": "firing"
+ 1828    }
+ 1829  ]'
+ 1830  ls
+ 1831  cd webhook/
+ 1832  ls
+ 1833  vim app.py 
+ 1834  docker-compose restart webhook-adapter
+ 1835  curl -X POST http://localhost:9093/api/v1/alerts -H "Content-Type: application/json" -d '[
+ 1836    {
+ 1837      "labels": {
+ 1838        "alertname": "TestAlert",
+ 1839        "severity": "critical",
+ 1840        "container": "demo-app"
+ 1841      },
+ 1842      "annotations": {
+ 1843        "summary": "Container Down",
+ 1844        "description": "demo-app is not reporting metrics"
+ 1845      },
+ 1846      "status": "firing"
+ 1847    }
+ 1848  ]'
+ 1849  curl -X POST http://localhost:9093/api/v2/alerts -H "Content-Type: application/json" -d '[
+ 1850    {
+ 1851      "labels": {
+ 1852        "alertname": "TestAlert",
+ 1853        "severity": "critical",
+ 1854        "container": "demo-app"
+ 1855      },
+ 1856      "annotations": {
+ 1857        "summary": "Container Down",
+ 1858        "description": "demo-app is not reporting metrics"
+ 1859      },
+ 1860      "startsAt": "2026-04-29T10:00:00Z",
+ 1861      "endsAt": "",
+ 1862      "generatorURL": ""
+ 1863    }
+ 1864  ]'
+ 1865  curl -X POST http://localhost:9093/api/v2/alerts -H "Content-Type: application/json" -d '[
+ 1866    {
+ 1867      "labels": {
+ 1868        "alertname": "TestAlert",
+ 1869        "severity": "critical",
+ 1870        "container": "demo-app"
+ 1871      },
+ 1872      "annotations": {
+ 1873        "summary": "Container Down",
+ 1874        "description": "demo-app is not reporting metrics"
+ 1875      },
+ 1876      "startsAt": "2026-04-29T10:00:00Z"
+ 1877    }
+ 1878  ]'
+ 1879  vim app.py 
+ 1880  cat app.py 
+ 1881  vim app.py 
+ 1882  docker-compose restart webhook-adapter
+ 1883  docker ps
+ 1884  ls
+ 1885  cd ..
+ 1886  ls
+ 1887  cd prometheus/
+ 1888  ls
+ 1889  cd rules/
+ 1890  ls
+ 1891  cat alerts.yml 
+ 1892  cd ..
+ 1893  ls
+ 1894  cd ..
+ 1895  ls
+ 1896  cat docker-compose.yml 
+ 1897  docker exec -it 9400deb50995
+ 1898  docker exec -it 9400deb50995 bash
+ 1899  docker exec -it 9400deb50995 bin/bash
+ 1900  docker exec -it 9400deb50995 /bin/bash
+ 1901  docker ps
+ 1902  docker exec -it alertmanager bash
+ 1903  cat prometheus.yml 
+ 1904  ls
+ 1905  cd prometheus/
+ 1906  ls
+ 1907  cat prometheus.yml 
+ 1908  docker ps
+ 1909  docker exec -it prometheus wget -qO- http://alertmanager:9093
+ 1910  docker network ls
+ 1911  docker inspect prometheus | grep NetworkMode
+ 1912  docker inspect alertmanager | grep monitoring-stack_default -A 5
+ 1913  docker-compose restart prometheus
+ 1914  docker exec -it prometheus wget -qO- http://alertmanager:9093
+ 1915  cd ..
+ 1916  ls
+ 1917  docker exec -it prometheus wget -qO- http://alertmanager:9093
+ 1918  docker rm -f prometheus
+ 1919  docker-compose up -d prometheus
+ 1920  docker exec -it prometheus wget -qO- http://alertmanager:9093
+ 1921  docker-compose down
+ 1922  docker rm -f prometheus alertmanager grafana webhook-adapter node-exporter cadvisor 2>/dev/null
+ 1923  docker network rm monitoring-stack_default 2>/dev/null
+ 1924  docker-compose up -d --build
+ 1925  docker exec -it prometheus wget -qO- http://alertmanager:9093
+ 1926  docker-compose up -d --build
+ 1927  docker exec -it prometheus wget -qO- http://alertmanager:9093
+ 1928  docker-compose down -v
+ 1929  docker rm -f prometheus alertmanager grafana webhook-adapter node-exporter cadvisor 2>/dev/null
+ 1930  sudo systemctl restart docker
+ 1931  docker-compose up -d --build
+ 1932  docker exec -it prometheus cat /etc/resolv.conf
+ 1933  docker-compose down --remove-orphans
+ 1934  docker network rm monitoring-stack_default
+ 1935  docker exec -it prometheus nslookup alertmanager
+ 1936  docker-compose up -d
+ 1937  docker exec -it prometheus getent hosts alertmanager
+ 1938  docker exec -it prometheus ping -c 1 alertmanager
+ 1939  docker-compose down --remove-orphans
+ 1940  docker rm -f prometheus alertmanager grafana webhook-adapter node-exporter cadvisor 2>/dev/null
+ 1941  docker network ls | grep monitoring-stack
+ 1942  docker-compose up -d --build
+ 1943  docker exec -it prometheus ping -c 1 alertmanager
+ 1944  docker-compose down -v --remove-orphans
+ 1945  docker rm -f $(docker ps -aq) 2>/dev/null
+ 1946  docker network prune -f
+ 1947  docker-compose up -d --build
+ 1948  docker exec -it prometheus ping -c 1 alertmanager
+ 1949  ls
+ 1950  cat docker-compose.yml 
+ 1951  vim docker-compose.yml 
+ 1952  docker-compose down -v
+ 1953  docker-compose up -d --build
+ 1954  docker exec -it prometheus ping -c 1 alertmanager
+ 1955  docker exec -it prometheus cat /etc/hosts
+ 1956  docker-compose down -v --remove-orphans
+ 1957  sudo systemctl restart docker
+ 1958  docker ps -a
+ 1959  docker ps
+ 1960  docker-compose up -d --build
+ 1961  docker exec -it prometheus ping -c 1 alertmanager
+ 1962  docker exec -it prometheus cat /etc/prometheus/prometheus.yml | grep -A5 alertmanager
+ 1963  docker-compose restart prometheus
+ 1964  docker exec -it prometheus kill -HUP 1
+ 1965  docker-compose down -v --remove-orphans
+ 1966  docker-compose up -d --build
+ 1967  docker exec -it prometheus ping -c 1 alertmanager
+ 1968  docker-compose up -d
+ 1969  ls
+ 1970  add user
+ 1971  sudo adduser jay_a
+ 1972  su -jay_a
+ 1973  su - jay_a
+ 1974  sudo usermod -aG sudo jay_a
+ 1975  sudo visudo
+ 1976  sudo mariadb -u root -pecosmob
+ 1977  cd Downloads/
+ 1978  sudo mariadb -u root -p gigtel < gigtel_db_backup.sql 
+ 1979  sudo mariadb -u root -pgigtel < gigtel_db_backup.sql 
+ 1980  sudo mariadb -u root gigtel < gigtel_db_backup.sql 
+ 1981  sudo mariadb -u root -p gigtel < gigtel_db_backup.sql 
+ 1982  sudo mariadb -u root -p school < gigtel_db_backup.sql 
+ 1983  sudo mariadb -u root -p gigtel < kamailio-backup.sql 
+ 1984  sudo mariadb -u root -p -f gigtel < kamailio-backup.sql 
+ 1985  psql -U kamailio -d gigtel -f kamailio-backup.sql
+ 1986  sudo mariadb -u root -p
+ 1987  sudo mariadb -u root -p nation < nation.sql 
+ 1988  select * from nation
+ 1989  ww
+ 1990  jnkmhnjkhk
+ 1991  gh
+ 1992  g
+ 1993  hg
+ 1994  gf
+ 1995  gfgg
+ 1996  g
+ 1997  user
+ 1998  cd ..
+ 1999  sudo userdel jay_a
+ 2000  cut -d: -f1 /etc/passwd
+ 2001  ls
+ 2002  cd ab
+ 2003  ls
+ 2004  cd monitoring-stack/
+ 2005  ls
+ 2006  docker ps
+ 2007  docker ps | grep webhook
+ 2008  docker logs webhook-adapter
+ 2009  vim webhook/app.py
+ 2010  cat webhook/app.py
+ 2011  vim webhook/app.py
+ 2012  docker-compose down
+ 2013  docker-compose up -d --build
+ 2014  docker logs webhook-adapter | tail -10
+ 2015  ls
+ 2016  cd webhook/
+ 2017  cd ..
+ 2018  ls
+ 2019  cd alertmanager/
+ 2020  ls
+ 2021  vim alertmanager.yml 
+ 2022  docker-compose restart prometheus
+ 2023  docker ps
+ 2024  docker ps -a
+ 2025  stress --cpu 2
+ 2026  stress --vm 1 --vm-bytes 1G
+ 2027  sudo apt update
+ 2028  sudo apt install stress -y
+ 2029  stress --cpu 2
+ 2030  stress-ng --vm 1 --vm-bytes 1G
+ 2031  stress --vm 1 --vm-bytes 1G
+ 2032  stress-ng --cpu 4 --timeout 60s
+ 2033  ls
+ 2034  cat alertmanager.yml 
+ 2035  ls
+ 2036  cd ..
+ 2037  la
+ 2038  cat docker-compose.yml 
+ 2039  ls
+ 2040  cd grafana/
+ 2041  ls
+ 2042  cd provisioning/
+ 2043  ls
+ 2044  cd da
+ 2045  cd datasources/
+ 2046  la
+ 2047  cat datasource.yml 
+ 2048  ls
+ 2049  cd ..
+ 2050  ls
+ 2051  cd dashboards/
+ 2052  ls
+ 2053  cd ..
+ 2054  ls
+ 2055  cd ..
+ 2056  ls
+ 2057  cd ..
+ 2058  ls
+ 2059  cd prometheus/
+ 2060  ls
+ 2061  cat prometheus.yml 
+ 2062  ls
+ 2063  cd rules/
+ 2064  ls
+ 2065  cat alerts.yml 
+ 2066  ls
+ 2067  cd ..
+ 2068  ls
+ 2069  cd rules/
+ 2070  ls
+ 2071  cd ..
+ 2072  ls
+ 2073  cd ..
+ 2074  ls
+ 2075  cd webhook/
+ 2076  ls
+ 2077  cat app.py 
+ 2078  ls
+ 2079  car Dockerfile 
+ 2080  cat Dockerfile 
+ 2081  ls
+ 2082  cat requirements.txt 
+ 2083  ls
+ 2084  cd ..
+ 2085  ls
+ 2086  cd prometheus/
+ 2087  LS
+ 2088  ls
+ 2089  cat prometheus.yml 
+ 2090  ls
+ 2091  cd ..
+ 2092  ls
+ 2093  la
+ 2094  cat .env 
+ 2095  ls
+ 2096  la
+ 2097  cat .gitignore 
+ 2098  docker ps | grep cadvisor:8080
+ 2099  docker ps | grep cadvisor:8081
+ 2100  docker ps
+ 2101  docker ps | grep cadvisor
+ 2102  ls
+ 2103  cd alertmanager/
+ 2104  ls
+ 2105  vim alertmanager.yml 
+ 2106  tree
+ 2107  cd ..
+ 2108  ls
+ 2109  cd monitoring-stack/
+ 2110  tree
+ 2111  cat > alertmanager/alertmanager.yml << 'EOF'
+global:
+  resolve_timeout: 5m
+
+route:
+  group_by: ['alertname', 'severity', 'job']
+  group_wait: 30s
+  group_interval: 5m
+  repeat_interval: 4h
+  receiver: 'google-chat'
+
+  routes:
+    - match:
+        severity: critical
+      receiver: 'google-chat'
+      group_wait: 10s
+      group_interval: 2m
+      repeat_interval: 1h
+
+    - match:
+        severity: warning
+      receiver: 'google-chat'
+      group_wait: 1m
+      group_interval: 10m
+      repeat_interval: 6h
+
+    - match_re:
+        alertname: "ContainerOOMKilled|ContainerRestartLoop"
+      receiver: 'google-chat'
+      group_wait: 0s
+      repeat_interval: 30m
+
+inhibit_rules:
+  - source_match:
+      alertname: 'HostDown'
+    target_match_re:
+      alertname: '.+'
+    equal: ['instance']
+
+  - source_match:
+      severity: 'critical'
+    target_match:
+      severity: 'warning'
+    equal: ['alertname', 'instance']
+
+receivers:
+  - name: 'google-chat'
+    webhook_configs:
+      - url: 'http://webhook-adapter:5000/'
+        send_resolved: true
+        max_alerts: 10
+EOF
+
+ 2112  ls
+ 2113  cd alertmanager/
+ 2114* cat alertmanager.ym
+ 2115  ls
+ 2116  cat alertmanager.yml 
+ 2117  ls
+ 2118  cat alertmanager.yml
+ 2119  la
+ 2120  cat > alertmanager/alertmanager.yml << 'EOF'
+global:
+  resolve_timeout: 5m
+
+route:
+  group_by: ['alertname', 'severity', 'job']
+  group_wait: 30s
+  group_interval: 5m
+  repeat_interval: 4h
+  receiver: 'google-chat'
+
+  routes:
+    - match:
+        severity: critical
+      receiver: 'google-chat'
+      group_wait: 10s
+      group_interval: 2m
+      repeat_interval: 1h
+
+    - match:
+        severity: warning
+      receiver: 'google-chat'
+      group_wait: 1m
+      group_interval: 10m
+      repeat_interval: 6h
+
+    - match_re:
+        alertname: "ContainerOOMKilled|ContainerRestartLoop"
+      receiver: 'google-chat'
+      group_wait: 0s
+      repeat_interval: 30m
+
+inhibit_rules:
+  - source_match:
+      alertname: 'HostDown'
+    target_match_re:
+      alertname: '.+'
+    equal: ['instance']
+
+  - source_match:
+      severity: 'critical'
+    target_match:
+      severity: 'warning'
+    equal: ['alertname', 'instance']
+
+receivers:
+  - name: 'google-chat'
+    webhook_configs:
+      - url: 'http://webhook-adapter:5000/'
+        send_resolved: true
+        max_alerts: 10
+EOF
+
+ 2121  ls
+ 2122  cd ..
+ 2123  cat > alertmanager/alertmanager.yml << 'EOF'
+global:
+  resolve_timeout: 5m
+
+route:
+  group_by: ['alertname', 'severity', 'job']
+  group_wait: 30s
+  group_interval: 5m
+  repeat_interval: 4h
+  receiver: 'google-chat'
+
+  routes:
+    - match:
+        severity: critical
+      receiver: 'google-chat'
+      group_wait: 10s
+      group_interval: 2m
+      repeat_interval: 1h
+
+    - match:
+        severity: warning
+      receiver: 'google-chat'
+      group_wait: 1m
+      group_interval: 10m
+      repeat_interval: 6h
+
+    - match_re:
+        alertname: "ContainerOOMKilled|ContainerRestartLoop"
+      receiver: 'google-chat'
+      group_wait: 0s
+      repeat_interval: 30m
+
+inhibit_rules:
+  - source_match:
+      alertname: 'HostDown'
+    target_match_re:
+      alertname: '.+'
+    equal: ['instance']
+
+  - source_match:
+      severity: 'critical'
+    target_match:
+      severity: 'warning'
+    equal: ['alertname', 'instance']
+
+receivers:
+  - name: 'google-chat'
+    webhook_configs:
+      - url: 'http://webhook-adapter:5000/'
+        send_resolved: true
+        max_alerts: 10
+EOF
+
+ 2124  ls
+ 2125  cd prometheus/
+ 2126  ls
+ 2127  cd ..
+ 2128  cat > prometheus/prometheus.yml << 'EOF'
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  scrape_timeout: 10s
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+            - alertmanager:9093
+      timeout: 10s
+      api_version: v2
+
+rule_files:
+  - /etc/prometheus/rules/*.yml
+
+scrape_configs:
+
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+        labels:
+          service: 'prometheus'
+
+  - job_name: 'node-exporter'
+    static_configs:
+      - targets: ['node-exporter:9100']
+        labels:
+          service: 'node-exporter'
+
+  - job_name: 'cadvisor'
+    static_configs:
+      - targets: ['cadvisor:8080']
+        labels:
+          service: 'cadvisor'
+    metric_relabel_configs:
+      - source_labels: [__name__]
+        regex: 'container_(network_tcp_usage_total|tasks_state|cpu_load_average_10s)'
+        action: drop
+
+  - job_name: 'alertmanager'
+    static_configs:
+      - targets: ['alertmanager:9093']
+        labels:
+          service: 'alertmanager'
+EOF
+
+ 2129  cd prometheus/
+ 2130  ls
+ 2131  cat prometheus.yml 
+ 2132  cd ..
+ 2133  ls
+ 2134  cat > prometheus/rules/alerts.yml << 'EOF'
+groups:
+
+  - name: host-alerts
+    rules:
+
+      - alert: HighCPUUsage
+        expr: >
+          100 - (avg by (instance, job) (
+            rate(node_cpu_seconds_total{mode="idle"}[2m])
+          ) * 100) > 85
+        for: 3m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High CPU usage on {{ $labels.instance }}"
+          description: "CPU usage is {{ printf \"%.1f\" $value }}% — sustained above 85% for 3+ minutes."
+          runbook: "Run: docker stats --no-stream | top -b -n1"
+
+      - alert: CriticalCPUUsage
+        expr: >
+          100 - (avg by (instance, job) (
+            rate(node_cpu_seconds_total{mode="idle"}[2m])
+          ) * 100) > 95
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "CRITICAL CPU on {{ $labels.instance }}"
+          description: "CPU at {{ printf \"%.1f\" $value }}% — system may be unresponsive."
+          runbook: "Identify runaway process immediately: docker stats --no-stream"
+
+      - alert: HighMemoryUsage
+        expr: >
+          (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes) * 100 < 15
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High memory on {{ $labels.instance }}"
+          description: "Only {{ printf \"%.1f\" $value }}% RAM available."
+          runbook: "Run: free -h | docker stats --no-stream"
+
+      - alert: CriticalMemoryUsage
+        expr: >
+          (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes) * 100 < 5
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "CRITICAL memory on {{ $labels.instance }} — OOM risk"
+          description: "Only {{ printf \"%.1f\" $value }}% RAM left. OOM killer may trigger."
+          runbook: "URGENT: docker stats --no-stream | restart memory-heavy containers"
+
+      - alert: LowDiskSpace
+        expr: >
+          (
+            node_filesystem_avail_bytes{fstype!~"tmpfs|overlay|aufs|squashfs", mountpoint!~"/boot.*"}
+            / node_filesystem_size_bytes{fstype!~"tmpfs|overlay|aufs|squashfs", mountpoint!~"/boot.*"}
+          ) * 100 < 20
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Low disk on {{ $labels.instance }} ({{ $labels.mountpoint }})"
+          description: "{{ printf \"%.1f\" $value }}% free on {{ $labels.mountpoint }}."
+          runbook: "Run: df -h | docker system prune -f"
+
+      - alert: CriticalDiskSpace
+        expr: >
+          (
+            node_filesystem_avail_bytes{fstype!~"tmpfs|overlay|aufs|squashfs", mountpoint!~"/boot.*"}
+            / node_filesystem_size_bytes{fstype!~"tmpfs|overlay|aufs|squashfs", mountpoint!~"/boot.*"}
+          ) * 100 < 10
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "CRITICAL disk on {{ $labels.instance }} ({{ $labels.mountpoint }})"
+          description: "Only {{ printf \"%.1f\" $value }}% free — writes may fail."
+          runbook: "URGENT: docker system prune -af | clear old logs"
+
+      - alert: HostDown
+        expr: up == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Target DOWN: {{ $labels.job }} / {{ $labels.instance }}"
+          description: "Prometheus cannot scrape {{ $labels.instance }} for 1+ minute."
+          runbook: "Check: docker ps | verify exporter is running"
+
+      - alert: DiskIOSaturation
+        expr: >
+          rate(node_disk_io_time_seconds_total[5m]) * 100 > 90
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Disk I/O saturation on {{ $labels.instance }}"
+          description: "Device {{ $labels.device }} is {{ printf \"%.1f\" $value }}% saturated."
+
+  - name: container-alerts
+    rules:
+
+      - alert: ContainerDown
+        expr: >
+          time() - container_last_seen{
+            name!="",
+            name!~".*_POD_.*|.*pause.*",
+            container_label_com_docker_compose_service!=""
+          } > 60
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Container DOWN: {{ $labels.name }}"
+          description: "Container {{ $labels.name }} not reporting metrics for 60+ seconds."
+          runbook: "Run: docker ps -a | docker logs {{ $labels.name }}"
+
+      - alert: ContainerHighCPU
+        expr: >
+          (
+            rate(container_cpu_usage_seconds_total{
+              name!="",
+              container_label_com_docker_compose_service!=""
+            }[2m]) * 100
+          ) > 80
+        for: 3m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Container CPU high: {{ $labels.name }}"
+          description: "Container {{ $labels.name }} using {{ printf \"%.1f\" $value }}% CPU."
+          runbook: "docker stats {{ $labels.name }} | docker logs {{ $labels.name }}"
+
+      - alert: ContainerHighMemory
+        expr: >
+          (
+            container_memory_working_set_bytes{
+              name!="",
+              container_label_com_docker_compose_service!=""
+            }
+            / container_spec_memory_limit_bytes{
+              name!="",
+              container_label_com_docker_compose_service!="",
+              container_spec_memory_limit_bytes > 0
+            }
+          ) * 100 > 85
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Container memory high: {{ $labels.name }}"
+          description: "Container {{ $labels.name }} at {{ printf \"%.1f\" $value }}% of memory limit."
+          runbook: "docker stats {{ $labels.name }} | consider raising memory limit"
+
+      - alert: ContainerRestartLoop
+        expr: >
+          increase(container_start_time_seconds{
+            name!="",
+            container_label_com_docker_compose_service!=""
+          }[10m]) > 3
+        for: 0m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Container restart loop: {{ $labels.name }}"
+          description: "{{ $labels.name }} restarted {{ printf \"%.0f\" $value }} times in 10 minutes."
+          runbook: "docker logs --tail 100 {{ $labels.name }}"
+
+      - alert: ContainerOOMKilled
+        expr: >
+          increase(container_oom_events_total{
+            name!="",
+            container_label_com_docker_compose_service!=""
+          }[5m]) > 0
+        for: 0m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Container OOM killed: {{ $labels.name }}"
+          description: "{{ $labels.name }} was killed by OOM. Increase memory limit or fix leak."
+          runbook: "Increase mem limit in docker-compose.yml for {{ $labels.name }}"
+EOF
+
+ 2135  cd prometheus/rules/
+ 2136  cat alerts.yml 
+ 2137  cd ..
+ 2138  ;s
+ 2139  ls
+ 2140  cat > docker-compose.yml << 'EOF'
+version: '3.8'
+
+services:
+
+  prometheus:
+    image: prom/prometheus:v2.51.2
+    container_name: prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--storage.tsdb.retention.time=15d'
+      - '--web.enable-lifecycle'
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./prometheus/rules:/etc/prometheus/rules:ro
+      - prometheus_data:/prometheus
+    ports:
+      - "9090:9090"
+    restart: unless-stopped
+    networks:
+      - monitoring
+    depends_on:
+      - alertmanager
+
+  alertmanager:
+    image: prom/alertmanager:v0.27.0
+    container_name: alertmanager
+    command:
+      - '--config.file=/etc/alertmanager/alertmanager.yml'
+      - '--storage.path=/alertmanager'
+    volumes:
+      - ./alertmanager/alertmanager.yml:/etc/alertmanager/alertmanager.yml:ro
+      - alertmanager_data:/alertmanager
+    ports:
+      - "9093:9093"
+    restart: unless-stopped
+    networks:
+      - monitoring
+
+  node-exporter:
+    image: prom/node-exporter:v1.8.0
+    container_name: node-exporter
+    command:
+      - '--path.rootfs=/host'
+      - '--path.procfs=/host/proc'
+      - '--path.sysfs=/host/sys'
+      - '--collector.filesystem.mount-points-exclude=^/(sys|proc|dev|host|etc)($$|/)'
+    volumes:
+      - /:/host:ro,rslave
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+    pid: host
+    ports:
+      - "9100:9100"
+    restart: unless-stopped
+    networks:
+      - monitoring
+
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:v0.49.1
+    container_name: cadvisor
+    privileged: true
+    devices:
+      - /dev/kmsg
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:ro
+      - /sys:/sys:ro
+      - /var/lib/docker:/var/lib/docker:ro
+      - /dev/disk:/dev/disk:ro
+    ports:
+      - "8081:8080"
+    restart: unless-stopped
+    networks:
+      - monitoring
+
+  grafana:
+    image: grafana/grafana:10.4.2
+    container_name: grafana
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./grafana/provisioning/datasources:/etc/grafana/provisioning/datasources:ro
+      - ./grafana/provisioning/dashboards:/etc/grafana/provisioning/dashboards:ro
+    environment:
+      - GF_SECURITY_ADMIN_USER=${GRAFANA_ADMIN_USER:-admin}
+      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_ADMIN_PASSWORD:-admin}
+      - GF_USERS_ALLOW_SIGN_UP=false
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+    networks:
+      - monitoring
+    depends_on:
+      - prometheus
+
+  webhook-adapter:
+    build:
+      context: ./webhook
+      dockerfile: Dockerfile
+    container_name: webhook-adapter
+    environment:
+      - GOOGLE_CHAT_WEBHOOK=${GOOGLE_CHAT_WEBHOOK}
+      - HOST_NAME=${HOST_NAME:-docker-host}
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
+    networks:
+      - monitoring
+
+networks:
+  monitoring:
+    driver: bridge
+    name: monitoring
+
+volumes:
+  prometheus_data:
+  alertmanager_data:
+  grafana_data:
+EOF
+
+ 2141  ls
+ 2142  cat > webhook/Dockerfile << 'EOF'
+FROM python:3.11-slim
+
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY app.py .
+
+RUN adduser --disabled-password --gecos "" appuser
+USER appuser
+
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--workers", "2", "--timeout", "30", "--access-logfile", "-", "app:app"]
+EOF
+
+ 2143  cat > webhook/requirements.txt << 'EOF'
+flask==3.0.3
+requests==2.32.3
+gunicorn==22.0.0
+EOF
+
+ 2144  ls
+ 2145  cd webhook/
+ 2146  ls
+ 2147  vim app.py 
+ 2148  cd ..
+ 2149  ls
+ 2150  # Tear down old stack completely (clean slate)
+ 2151  docker-compose down -v
+ 2152  # Rebuild webhook image with new Dockerfile + requirements
+ 2153  docker-compose build --no-cache webhook-adapter
+ 2154  # Start everything
+ 2155  docker-compose up -d
+ 2156  # Verify all 6 containers are running
+ 2157  docker-compose ps
+ 2158  curl -s http://localhost:9090/api/v1/targets | python3 -m json.tool | grep '"health"'
+ 2159  # All should say "up"
+ 2160  docker exec prometheus promtool check rules /etc/prometheus/rules/alerts.yml
+ 2161  docker ps
+ 2162  docker exec prometheus promtool check rules /etc/prometheus/rules/alerts.yml
+ 2163  docker ps
+ 2164  docker exec alertmanager amtool check-config /etc/alertmanager/alertmanager.yml
+ 2165  curl http://localhost:5000/health
+ 2166  curl -X POST http://localhost:5000/   -H 'Content-Type: application/json'   -d '{"alerts":[{"status":"firing","labels":{"alertname":"DeployTest","severity":"warning","instance":"localhost"},"annotations":{"summary":"Deploy successful — webhook working","description":"Stack is up and Google Chat notifications are live."}}]}'
+ 2167  # 1. All targets UP?
+ 2168  curl -s http://localhost:9090/api/v1/targets | python3 -m json.tool | grep '"health"'
+ 2169  # All should say "up"
+ 2170  # 2. Rules loaded with no errors?
+ 2171  docker exec prometheus promtool check rules /etc/prometheus/rules/alerts.yml
+ 2172  # 3. Alertmanager config valid?
+ 2173  docker exec alertmanager amtool check-config /etc/alertmanager/alertmanager.yml
+ 2174  # 4. Webhook health check
+ 2175  curl http://localhost:5000/health
+ 2176  # 5. End-to-end Google Chat test
+ 2177  curl -X POST http://localhost:5000/   -H 'Content-Type: application/json'   -d '{"alerts":[{"status":"firing","labels":{"alertname":"DeployTest","severity":"warning","instance":"localhost"},"annotations":{"summary":"Deploy successful — webhook working","description":"Stack is up and Google Chat notifications are live."}}]}'
+ 2178  curl -s http://localhost:9090/api/v1/targets | python3 -m json.tool | grep '"health"'
+ 2179  docker exec prometheus promtool check rules /etc/prometheus/rules/alerts.yml
+ 2180  docker ps
+ 2181  docker exec alertmanager amtool check-config /etc/alertmanager/alertmanager.yml
+ 2182  docker-compose ps
+ 2183  docker-compose logs --tail=20 webhook-adapter
+ 2184  docker-compose logs --tail=20 alertmanager
+ 2185  docker-compose logs --tail=20 prometheus
+ 2186  docker-compose ps
+ 2187  docker-compose logs --tail=20 prometheus
+ 2188  ls
+ 2189  cd prometheus/
+ 2190  ls
+ 2191  cat prometheus.yml 
+ 2192  ls
+ 2193  cd rules/
+ 2194  ls
+ 2195  cat alerts.yml 
+ 2196  vim alerts.yml 
+ 2197  docker-compose restart prometheus
+ 2198  docker ps
+ 2199  docker-compose ps
+ 2200  docker-compose logs --tail=20 webhook-adapter
+ 2201  docker-compose logs --tail=20 alertmanager
+ 2202  docker-compose logs --tail=20 prometheus
+ 2203  curl -X POST http://localhost:5000/   -H 'Content-Type: application/json'   -d '{
+    "alerts": [{
+      "status": "firing",
+      "labels": {
+        "alertname": "TestAlert",
+        "severity": "critical",
+        "instance": "test-host:9100",
+        "job": "node-exporter",
+        "container_label_com_docker_compose_service": "my-app"
+      },
+      "annotations": {
+        "summary": "Manual test alert",
+        "description": "This is a direct webhook test. If you see this in Google Chat, the webhook pipeline works."
+      }
+    }]
+  }'
+ 2204  curl -X POST http://localhost:5000/   -H 'Content-Type: application/json'   -d '{
+    "alerts": [{
+      "status": "resolved",
+      "labels": {
+        "alertname": "TestAlert",
+        "severity": "critical",
+        "instance": "test-host:9100"
+      },
+      "annotations": {
+        "summary": "Test alert resolved"
+      }
+    }]
+  }'
+ 2205  docker run --rm -it progrium/stress --cpu 4 --timeout 300s
+ 2206  cat /dev/urandom | gzip -9 > /dev/null &
+ 2207  kill %1
+ 2208  # Allocate ~2GB RAM for 3 minutes using Python
+ 2209  python3 -c "
+import time
+print('Allocating memory...')
+x = bytearray(2 * 1024 * 1024 * 1024)  # 2GB
+print('Holding for 3 minutes...')
+time.sleep(180)
+print('Releasing.')
+"
+ 2210  [200~docker stop cadvisor~
+ 2211  docker stop cadvisor
+ 2212  docker ps
+ 2213  docker ps -a
+ 2214  docker start cadvisor
+ 2215  curl -s http://localhost:9090/api/v1/targets | python3 -m json.tool | grep -E '"job"|"health"'
+ 2216  curl -s http://localhost:9090/api/v1/rules | python3 -m json.tool | grep -E '"name"|"health"'
+ 2217  curl -X POST http://localhost:5000/   -H 'Content-Type: application/json'   -d '{
+    "alerts": [{
+      "status": "firing",
+      "labels": {
+        "alertname": "TestAlert",
+        "severity": "critical",
+        "instance": "demo-host"
+      },
+      "annotations": {
+        "summary": "Webhook Test",
+        "description": "Direct test to Google Chat"
+      }
+    }]
+  }'
+ 2218  curl -X POST http://localhost:9093/api/v2/alerts   -H 'Content-Type: application/json'   -d '[{
+    "labels": {
+      "alertname": "ManualTest",
+      "severity": "warning",
+      "instance": "localhost"
+    },
+    "annotations": {
+      "summary": "Alertmanager test"
+    }
+  }]'
+ 2219  docker run --rm -it progrium/stress --cpu 4 --timeout 180
+ 2220  cd ..
+ 2221  ls
+ 2222  cd ..
+ 2223  docker run --rm -it progrium/stress --cpu 4 --timeout 180
+ 2224  cat /dev/urandom | gzip -9 > /dev/null &
+ 2225  kill %1
+ 2226  jobs -l
+ 2227  kill %2
+ 2228  jobs -l
+ 2229  kill %3
+ 2230  jobs -l
+ 2231  curl -s http://localhost:9090/api/v1/targets | python3 -m json.tool | grep -E '"job"|"health"'
+ 2232  yes > /dev/null &
+ 2233  docker ps
+ 2234  pkill yes
+ 2235  docker ps
+ 2236  htop
+ 2237  ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%cpu | head
+ 2238  docker ps | grep cadvisor
+ 2239  docker ps
+ 2240  ls
+ 2241  cat docker-compose.yml 
+ 2242  docker-compose down
+ 2243  docker ps
+ 2244  docker-compose up -d
+ 2245  docker ps
+ 2246  docker compose logs -f
+ 2247  docker logs cadvisor --tail 20
+ 2248  docker-compose logs -f
+ 2249  curl http://localhost:8081/metrics | head
+ 2250  grep container_cpu_usage_seconds_total
+ 2251  grep container_tasks_state
+ 2252  curl -X POST http://localhost:5000/   -H 'Content-Type: application/json'   -d '{
+    "alerts": [{
+      "status": "firing",
+      "labels": {
+        "alertname": "TestAlert",
+        "severity": "critical",
+        "instance": "test-host:9100",
+        "job": "node-exporter",
+        "container_label_com_docker_compose_service": "my-app"
+      },
+      "annotations": {
+        "summary": "Manual test alert",
+        "description": "This is a direct webhook test. If you see this in Google Chat, the webhook pipeline works."
+      }
+    }]
+  }'
+ 2253  curl -X POST http://localhost:5000/   -H 'Content-Type: application/json'   -d '{
+    "alerts": [{
+      "status": "resolved",
+      "labels": {
+        "alertname": "TestAlert",
+        "severity": "critical",
+        "instance": "test-host:9100"
+      },
+      "annotations": {
+        "summary": "Test alert resolved"
+      }
+    }]
+  }'
+ 2254  docker ps
+ 2255  docker stop 3025fde1b706
+ 2256  docker ps
+ 2257  docker ps -a
+ 2258  curl -s http://localhost:9090/api/v1/targets | grep cadvisor
+ 2259  docker start 3025fde1b706
+ 2260  cat /dev/urandom | gzip -9 > /dev/null &
+ 2261  jobs
+ 2262  kill %1
+ 2263  jobs
+ 2264  kill %2
+ 2265  jobs
+ 2266  docker run --rm -it progrium/stress --cpu 4 --timeout 60s
+ 2267  yes > /dev/null &
+ 2268  jobs
+ 2269  kill %1
+ 2270  jobs
+ 2271  kill %2
+ 2272  kill %3
+ 2273  kill %4
+ 2274  kill %5
+ 2275  kill %6
+ 2276  jobs
+ 2277  python3 -c "
+import time
+print('Allocating memory...')
+x = bytearray(2 * 1024 * 1024 * 1024)  # 2GB
+print('Holding for 3 minutes...')
+time.sleep(180)
+print('Releasing.')
+"
+ 2278  curl -X POST http://localhost:9093/api/v2/alerts   -H 'Content-Type: application/json'   -d '[{
+    "labels": {
+      "alertname": "ManualTestAlert",
+      "severity": "warning",
+      "instance": "localhost:9100",
+      "job": "node-exporter"
+    },
+    "annotations": {
+      "summary": "Direct Alertmanager test",
+      "description": "Sent directly to Alertmanager API"
+    },
+    "generatorURL": "http://prometheus:9090"
+  }]'
+ 2279  docker ps
+ 2280  ls
+ 2281  cd alertmanager/
+ 2282  ls
+ 2283  cat alertmanager.yml 
+ 2284  # Bash CPU burn — no tools needed
+ 2285  cat /dev/urandom | gzip -9 > /dev/null &
+ 2286  jobs
+ 2287  kill %1
+ 2288  jobs
+ 2289  kill %2
+ 2290  kill %3
+ 2291  jobs
+ 2292  ls
+ 2293  cat alertmanager.yml 
+ 2294  ls
+ 2295  cd ..
+ 2296  ls
+ 2297  cd prometheus/
+ 2298  ls
+ 2299  cat prometheus.yml 
+ 2300  cd ..
+ 2301  ls
+ 2302  docker exec -it prometheus prometheus --version
+ 2303  docker exec -it grafana grafana-server -v
+ 2304  docker logs cadvisor | grep -i version
+ 2305  docker exec -it node-exporter node_exporter --version
+ 2306  jobs
+ 2307  docker volume inspect monitoring-stack_prometheus_data
+ 2308  docker volume ls
+ 2309  history
+ 2310  history > my_history.txt

@@ -1,0 +1,186 @@
+groups:
+
+  - name: host-alerts
+    rules:
+
+      - alert: HighCPUUsage
+        expr: >
+          100 - (avg by (instance, job) (
+            rate(node_cpu_seconds_total{mode="idle"}[2m])
+          ) * 100) > 85
+        for: 3m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High CPU usage on {{ $labels.instance }}"
+          description: "CPU usage is {{ printf \"%.1f\" $value }}% — sustained above 85% for 3+ minutes."
+          runbook: "Run: docker stats --no-stream | top -b -n1"
+
+      - alert: CriticalCPUUsage
+        expr: >
+          100 - (avg by (instance, job) (
+            rate(node_cpu_seconds_total{mode="idle"}[2m])
+          ) * 100) > 95
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "CRITICAL CPU on {{ $labels.instance }}"
+          description: "CPU at {{ printf \"%.1f\" $value }}% — system may be unresponsive."
+          runbook: "Identify runaway process immediately: docker stats --no-stream"
+
+      - alert: HighMemoryUsage
+        expr: >
+          (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes) * 100 < 15
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High memory on {{ $labels.instance }}"
+          description: "Only {{ printf \"%.1f\" $value }}% RAM available."
+          runbook: "Run: free -h | docker stats --no-stream"
+
+      - alert: CriticalMemoryUsage
+        expr: >
+          (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes) * 100 < 5
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "CRITICAL memory on {{ $labels.instance }} — OOM risk"
+          description: "Only {{ printf \"%.1f\" $value }}% RAM left. OOM killer may trigger."
+          runbook: "URGENT: docker stats --no-stream | restart memory-heavy containers"
+
+      - alert: LowDiskSpace
+        expr: >
+          (
+            node_filesystem_avail_bytes{fstype!~"tmpfs|overlay|aufs|squashfs", mountpoint!~"/boot.*"}
+            / node_filesystem_size_bytes{fstype!~"tmpfs|overlay|aufs|squashfs", mountpoint!~"/boot.*"}
+          ) * 100 < 20
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Low disk on {{ $labels.instance }} ({{ $labels.mountpoint }})"
+          description: "{{ printf \"%.1f\" $value }}% free on {{ $labels.mountpoint }}."
+          runbook: "Run: df -h | docker system prune -f"
+
+      - alert: CriticalDiskSpace
+        expr: >
+          (
+            node_filesystem_avail_bytes{fstype!~"tmpfs|overlay|aufs|squashfs", mountpoint!~"/boot.*"}
+            / node_filesystem_size_bytes{fstype!~"tmpfs|overlay|aufs|squashfs", mountpoint!~"/boot.*"}
+          ) * 100 < 10
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "CRITICAL disk on {{ $labels.instance }} ({{ $labels.mountpoint }})"
+          description: "Only {{ printf \"%.1f\" $value }}% free — writes may fail."
+          runbook: "URGENT: docker system prune -af | clear old logs"
+
+      - alert: HostDown
+        expr: up == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Target DOWN: {{ $labels.job }} / {{ $labels.instance }}"
+          description: "Prometheus cannot scrape {{ $labels.instance }} for 1+ minute."
+          runbook: "Check: docker ps | verify exporter is running"
+
+      - alert: DiskIOSaturation
+        expr: >
+          rate(node_disk_io_time_seconds_total[5m]) * 100 > 90
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Disk I/O saturation on {{ $labels.instance }}"
+          description: "Device {{ $labels.device }} is {{ printf \"%.1f\" $value }}% saturated."
+
+  - name: container-alerts
+    rules:
+
+      - alert: ContainerDown
+        expr: >
+          time() - container_last_seen{
+            name!="",
+            name!~".*_POD_.*|.*pause.*",
+            container_label_com_docker_compose_service!=""
+          } > 60
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Container DOWN: {{ $labels.name }}"
+          description: "Container {{ $labels.name }} not reporting metrics for 60+ seconds."
+          runbook: "Run: docker ps -a | docker logs {{ $labels.name }}"
+
+      - alert: ContainerHighCPU
+        expr: >
+          rate(container_cpu_usage_seconds_total{
+            name!="",
+            container_label_com_docker_compose_service!=""
+          }[2m]) * 100 > 80
+        for: 3m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Container CPU high: {{ $labels.name }}"
+          description: "Container {{ $labels.name }} using {{ printf \"%.1f\" $value }}% CPU."
+          runbook: "docker stats {{ $labels.name }} | docker logs {{ $labels.name }}"
+
+      - alert: ContainerHighMemory
+        expr: >
+          (
+            container_memory_working_set_bytes{
+              name!="",
+              container_label_com_docker_compose_service!=""
+            }
+            /
+            container_spec_memory_limit_bytes{
+              name!="",
+              container_label_com_docker_compose_service!=""
+            }
+          ) * 100 > 85
+          and
+          container_spec_memory_limit_bytes{
+            name!="",
+            container_label_com_docker_compose_service!=""
+          } > 0
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Container memory high: {{ $labels.name }}"
+          description: "Container {{ $labels.name }} at {{ printf \"%.1f\" $value }}% of memory limit."
+          runbook: "docker stats {{ $labels.name }} | consider raising memory limit"
+
+      - alert: ContainerRestartLoop
+        expr: >
+          increase(container_start_time_seconds{
+            name!="",
+            container_label_com_docker_compose_service!=""
+          }[10m]) > 3
+        for: 0m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Container restart loop: {{ $labels.name }}"
+          description: "{{ $labels.name }} restarted {{ printf \"%.0f\" $value }} times in 10 minutes."
+          runbook: "docker logs --tail 100 {{ $labels.name }}"
+
+      - alert: ContainerOOMKilled
+        expr: >
+          increase(container_oom_events_total{
+            name!="",
+            container_label_com_docker_compose_service!=""
+          }[5m]) > 0
+        for: 0m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Container OOM killed: {{ $labels.name }}"
+          description: "{{ $labels.name }} was killed by OOM. Increase memory limit or fix leak."
+          runbook: "Increase mem limit in docker-compose.yml for {{ $labels.name }}"

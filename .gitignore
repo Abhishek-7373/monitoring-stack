@@ -1,0 +1,8 @@
+# Ignore environment secrets
+.env
+
+# Optional: ignore local volumes/backups if any
+*.log
+prometheus_data/
+alertmanager_data/
+grafana_data/
