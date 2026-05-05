@@ -103,28 +103,26 @@ Google Chat Notifications
 
 ## 📂 Project Structure
 
-
+```
 monitoring-stack/
 ├── docker-compose.yml
 ├── architecture.png
 ├── .env.example
 ├── prometheus/
-│ ├── prometheus.yml
-│ └── rules/
-│ └── alerts.yml
-├── grafana/
-│ └── provisioning/
-│ ├── datasources/
-│ └── dashboards/
+│   ├── prometheus.yml
+│   └── rules/
+│       └── alerts.yml
 ├── alertmanager/
-│ └── alertmanager.yml
+│   └── alertmanager.yml
+├── grafana/
+│   └── provisioning/
+│       ├── datasources/
+│       └── dashboards/
 ├── webhook/
-│ ├── app.py
-│ ├── Dockerfile
-│ └── requirements.txt
-
-
----
+│   ├── app.py
+│   ├── Dockerfile
+│   └── requirements.txt
+```
 
 ## ⚙️ Prerequisites
 
